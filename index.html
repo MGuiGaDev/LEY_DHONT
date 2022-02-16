@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/dhont.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>Simulador Ley D'Hont</h1>
+    </header>
+    <div class="parties" id="parties">
+        <div class="parties__header">
+            <h2>Datos</h2>
+        </div>
+        <div class="seats">
+            <div class="form__group">
+                <label for="seats">Escaños</label>
+                <input type="number" name="seats" id="seats" value="0" />
+            </div>
+        </div>
+        <div class="party">
+            <div class="form__group">
+                <label for="pN1">Nombre</label>
+                <input type="tex" name="pN1" placeholder="Ej. Partido X" />
+            </div>
+            <div class="form__group">
+                <label for="pV1">Votos</label>
+                <input type="number" name="pV1" value="0" />
+            </div>
+            <button id="add">Añadir</button>
+        </div>
+    </div>
+    <div class="percentResults">
+        <div class="percentResults__header">
+            <h2>Reparto de escaños</h2>
+        </div>
+        <table id="percentResults">
+
+        </table>
+    </div>
+    <div class="graphicResults">
+        <div class="graphicResults__header">
+            <h2>Gráfico de votos</h2>
+        </div>
+        <div id="graphicResults">
+
+        </div>
+    </div>
+
+    <div class="container__Pactometer">
+        <div class="pactometer__header">
+            <h2>Pactómetro</h2>
+        </div>
+        <div class="pactometerView" id="pactometerView">
+            <p class="most">Mayoría Absoluta</p>
+        </div>
+        <div class="pactometerParties" id="pactometerParties">
+
+        </div>
+    </div>
+    <footer>
+        <h3>Manuel Guillén Gallardo</h3>
+        <h3>Práctica para "Desarrollo web en entorno cliente"</h3>
+        <h3>22/01/2022</h3>
+    </footer>
+    <script src="js/dhont.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.1/chart.min.js"
+        integrity="sha512-O2fWHvFel3xjQSi9FyzKXWLTvnom+lOYR/AUEThL/fbP4hv1Lo5LCFCGuTXBRyKC4K4DJldg5kxptkgXAzUpvA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/index.var.js"></script>
+</body>
+
+</html>
